@@ -19,3 +19,13 @@ models:
             tests:
                 - unique
                 - not_null
+    - name: transform_customer
+      description: "Test transformation"
+
+    - name: customer_sales
+      description: "Test transformation"
+      columns:
+        - name: customer_id
+          tests:
+          - unique
+          - not_null
