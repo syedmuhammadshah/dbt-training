@@ -6,5 +6,15 @@ sources:
     schema: raw
     tables:
       - name: raw_customers
+        columns:
+          - name: customer_id
+            tests:
+              - unique
+              - not_null
       - name: raw_orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
       - name: raw_payments
