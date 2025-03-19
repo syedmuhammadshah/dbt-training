@@ -3,19 +3,18 @@ version: 2
 sources:
   - name: jaffle_shop
     description: A clone of a Postgres application database.
-    database: raw
-    schema: jaffle_shop
+    database: nodal-album-438010-r2
+    schema: raw
     tables:
-      - name: customers
+      - name: raw_customers
         description: Raw customers data.
         columns:
-          - name: id
+          - name: customer_id
             description: Primary key for customers.
             tests:
               - unique
               - not_null
-
-      - name: orders
+      - name: raw_orders
         description: Raw orders data.
         columns:
           - name: id
@@ -23,3 +22,4 @@ sources:
             tests:
               - unique
               - not_null
+      - name: raw_payments
