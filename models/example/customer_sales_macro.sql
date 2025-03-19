@@ -6,7 +6,7 @@ SELECT c.customer_id,
     s.total_amount,
     {{ get_date_parts('order_date') }} as extract_date
 FROM {{ ref('transform_customer') }} c
-JOIN dbt_smuhammadshah.sales s 
+JOIN raw.sales s 
     ON c.customer_id = s.customer_id
 ORDER BY 
     c.customer_id

@@ -2,8 +2,9 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: dbt_smuhammadshah
+    database: nodal-album-438010-r2
+    schema: raw
     tables:
       - name: raw_customers
       - name: raw_orders
-      - name: raw_payment
+      - name: raw_payments

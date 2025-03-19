@@ -4,4 +4,4 @@ select
     payment_method,
     amount 
 
-from {{ source('jaffle_shop', 'raw_payment') }}
+from {{ source('jaffle_shop', 'raw_payments') }}
