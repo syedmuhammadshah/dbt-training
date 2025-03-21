@@ -29,3 +29,8 @@ models:
           tests:
           - unique
           - not_null
+
+    - name: test_python
+      description: "This model is disabled"
+      config:
+        enabled: false
