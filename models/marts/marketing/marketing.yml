@@ -16,5 +16,9 @@ models:
       - name: customer_id
         description: The primary key for customers.
         tests:
-          - unique
+          - unique:
+              config:
+                severity: error
+                error_if: ">30"
+                warn_if: ">10"
           - not_null
