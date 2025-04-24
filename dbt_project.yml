@@ -39,6 +39,8 @@ models:
   jaffle_shop:
     # Applies to all files under models/example/
     marts:
+      +required_tests: {"unique.*|not_null": 1}
+      #+required_tests: {"relationship.*": 1}
       materialized: table
     staging:
       materialized: table
